@@ -18,6 +18,7 @@ Feature: test
       Given go to page
       When step1
       Then enter <login> and <password>
+
       And step2
       Then cannot log in
 

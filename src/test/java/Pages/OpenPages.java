@@ -1,10 +1,13 @@
 package Pages;
 
 import net.serenitybdd.core.pages.PageObject;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class OpenPages extends PageObject {
+
+    public WebDriver driver = getDriver();
 
     @FindBy(id = "center_column")
     public WebElement checkPage;

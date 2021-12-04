@@ -7,12 +7,11 @@ public class DoSteps {
 
     OpenPages page;
 
-
     public void isPageLoaded() {
 
         page.open();
+        page.driver.manage().window().maximize();
         Assert.assertTrue(page.checkPage.isDisplayed());
-        
 
     }
 

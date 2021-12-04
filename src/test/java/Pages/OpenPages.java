@@ -24,4 +24,7 @@ public class OpenPages extends PageObject {
     @FindBy(className = "account")
     public WebElement checkName;
 
+    @FindBy(xpath = "//*[@id=\"center_column\"]/div[1]")
+    public WebElement errorText;
+
 }

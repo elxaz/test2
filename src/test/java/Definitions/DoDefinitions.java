@@ -18,6 +18,7 @@ public class DoDefinitions {
 
 
     }
+
     @When("step1")
     public void step1() {
 
@@ -25,6 +26,7 @@ public class DoDefinitions {
 
 
     }
+
     @Then("enter {string} and {string}")
     public void enter_and(String string1, String string2) {
 
@@ -32,19 +34,26 @@ public class DoDefinitions {
 
 
     }
+
     @Then("step2")
     public void step2() {
 
         steps.clickLogIn();
 
-
     }
+
     @Then("next page loaded")
     public void next_page_loaded() {
 
         steps.isLoggedIn();
 
-
     }
 
+    @Then("cannot log in")
+    public void cannot_log_in() {
+
+        steps.errorTextShowed();
+
+
+    }
 }

@@ -10,6 +10,17 @@ Feature: test
 
     Examples:
 
-    |login|password|
-    |"lexa.pan2014@gmail.com"|"01122000"|
-    |"123"                   |"123"     |
+      | login                    | password   |
+      | "lexa.pan2014@gmail.com" | "01122000" |
+
+    Scenario Outline:
+
+      Given go to page
+      When step1
+      Then enter <login> and <password>
+      And step2
+      Then cannot log in
+
+      Examples:
+        | login | password |
+        | "123" | "123"    |

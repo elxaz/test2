@@ -7,10 +7,12 @@ public class DoSteps {
 
     OpenPages page;
 
+
     public void isPageLoaded() {
 
         page.open();
         Assert.assertTrue(page.checkPage.isDisplayed());
+        
 
     }
 
@@ -36,6 +38,12 @@ public class DoSteps {
     public void isLoggedIn() {
 
         Assert.assertTrue(page.checkName.isDisplayed());
+
+    }
+
+    public void errorTextShowed() {
+
+        Assert.assertTrue(page.errorText.isDisplayed());
 
     }
 
